@@ -8,7 +8,7 @@ hdfs dfs -rm -r -f -skipTrash /apps/hive/warehouse/pae_db.db/$tabName/file > sqo
 export JAVA_HOME="/usr"
 
 /usr/lib/sqoop/bin/sqoop import --connect jdbc:mysql://10.93.1.9/skillfactory \
-        --username mysql --password arenadata \
+        --username --password \
         --hive-import -m 1 \
         --table $tabName \
         --hive-overwrite \

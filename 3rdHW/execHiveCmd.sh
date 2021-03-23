@@ -3,7 +3,7 @@ sql=$1
 echo "Executing Hive QL command: '$sql'...\c"
 
 cat > /tmp/sql.txt << EOF
-!connect  jdbc:hive2://10.93.1.9:10000 hive eee;\n
+!connect  jdbc:hive2://10.93.1.9:10000 ;\n
 $sql;
 EOF
 
